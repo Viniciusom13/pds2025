@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ClienteappApplication<clienteapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "org.iftm.clienteapp.ClienteappApplication",
+            "projectName": "clienteapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
