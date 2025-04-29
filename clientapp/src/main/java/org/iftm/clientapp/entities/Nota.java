@@ -8,7 +8,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-
+//INSERT INTO tb_nota (nota_valor, nota_mediaFinal) VALUES (8.5, 7.8);
 @Entity
 @Table(name="tb_nota")
 public class Nota implements Serializable{
@@ -23,6 +23,7 @@ public class Nota implements Serializable{
     @Column(name = "nota_mediaFinal", nullable = false)
     private Float mediaFinal;
 
+    public Nota(){}
     
     public Nota(Long id, Float valor, Float mediaFinal) {
         this.id = id;
@@ -57,4 +58,3 @@ public class Nota implements Serializable{
     public void setMediaFinal(Float mediaFinal) {
         this.mediaFinal = mediaFinal;
     }}
-
